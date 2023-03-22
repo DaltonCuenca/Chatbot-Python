@@ -1,0 +1,149 @@
+{
+    "saludos": [
+        {
+            "pattern": "Hola",
+            "response": [
+                "¡Hola! ¿Cómo estás?",
+                "¡Buenos días! ¿Qué tal estás?",
+                "¡Buenas tardes! ¿Qué puedo hacer por ti?"
+            ]
+        },
+        {
+            "pattern": "Buenos dias",
+            "response": [
+                "¡Buenos días! ¿Cómo estás?",
+                "¡Hola! ¿Qué planes tienes para hoy?",
+                "¡Feliz mañana! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "pattern": "Buenas tardes",
+            "response": [
+                "¡Buenas tardes! ¿Cómo estás?",
+                "¡Hola! ¿Qué tal tu día?",
+                "¡Buenas tardes! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "pattern": "Buenas noches",
+            "response": [
+                "¡Buenas noches! ¿Cómo estás?",
+                "¡Hola! ¿Estás listo para descansar?",
+                "¡Feliz noche! ¿Necesitas ayuda con algo?"
+            ]
+        },
+        {
+            "pattern": "Como (estas|te encuentras|tal estas)\\??",
+            "response": [
+                "Estoy bien, gracias. ¿Y tú?",
+                "¡Estoy genial!"
+            ]
+        },
+        {
+            "pattern": "Como ha sido tu dia?",
+            "response": [
+                "Ha sido un día ocupado, pero productivo. ¿Y el tuyo?",
+                "¡Ha sido un día genial!"
+            ]
+        }
+    ],
+    "conversacion": [
+        {
+            "pattern": "Que haces?",
+            "response": [
+                "Soy un programa de ordenador, por lo que no puedo hacer cosas en el sentido en que lo hacen las personas. Pero estoy aquí para ayudarte en lo que necesites, responder tus preguntas o conversar contigo si lo deseas. ¿Hay algo en particular en lo que pueda ayudarte hoy?"
+            ]
+        },
+        {
+            "pattern": "Puedes tener conversaciones?",
+            "response": [
+                "¡Claro! Estoy programado para tener conversaciones con las personas. ¿De qué te gustaría hablar?"
+            ]
+        }
+    ],
+    "clima": [
+        {
+            "pattern": "Como está el clima hoy?",
+            "response": [
+                "Está [clima].",
+                "Hoy está [clima]."
+            ]
+        },
+        {
+            "pattern": "Hace calor hoy",
+            "response": [
+                "Sí, hace mucho calor hoy.",
+                "¡Sí! El calor es insoportable hoy."
+            ]
+        },
+        {
+            "pattern": "Va a llover hoy?",
+            "response": [
+                "[ClimaLlover], va a llover hoy.",
+                "Según los pronósticos, [ClimaLlover]."
+            ]
+        }
+    ],
+    "hora": [
+        {
+            "pattern": "Que hora es?",
+            "response": [
+                "Son las [hora].",
+                "Ahora son las [hora]."
+            ]
+        },
+        {
+            "pattern": "A que hora es el evento?",
+            "response": [
+                "El evento es a las [hora].",
+                "Comienza a las [hora]."
+            ]
+        }
+    ],
+    "comida": [
+        {
+            "pattern": "Cual es tu comida favorita?",
+            "response": [
+                "Me gusta la [comida].",
+                "Mi comida favorita es [comida]."
+            ]
+        },
+        {
+            "pattern": "Has probado la comida [comida]?",
+            "response": [
+                "Sí, la he probado. Es deliciosa.",
+                "No la he probado, ¿es buena?"
+            ]
+        },
+        {
+            "pattern": "Como se hace [comida]?",
+            "response": [
+                "Para hacer [comida] necesitas [ingredientes] y [instrucciones].",
+                "La receta de [comida] es bastante simple. Necesitas [ingredientes] y [instrucciones]."
+            ]
+        }
+    ],
+    "algorithmics": [
+        {
+            "pattern": "Que es Algorithmic?",
+            "response": [
+                "Algorithmic School es una empresa que se dedica a la educación en tecnología y programación para niños y jóvenes."
+            ]
+        },
+        {
+            "pattern": "Cuales son los cursos que ofrece Algorithmic?",
+            "response": [
+                "Algorithmic ofrece los siguientes cursos: \nCaballero del codigo (5-7 años)\nAcademia Marciana (8-10 años)\nDiseño de Videojuegos (5-7 años)\nPython (14-17 años)"
+            ]
+        }
+    ],
+    "otro": [
+        {
+            "pattern": "",
+            "response": [
+                "Lo siento, no entiendo la pregunta. ¿Podrías preguntar de otra manera?",
+                "No estoy seguro de entender lo que preguntas. ¿Podrías reformular tu pregunta?"
+            ]
+        }
+    ]
+}
