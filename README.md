@@ -2,4 +2,8 @@
 
 Todo esta documentado.
 
-Activa el ambiente virtual y ejecuta el comando pip install -r requirements.txt para instalar todas las dependencias necesarias.
+Activa el ambiente virtual y ejecuta el comando para instalar todas las dependencias necesarias.
+
+```python
+pip install -r requirements.txt
+```
