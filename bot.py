@@ -1,24 +1,12 @@
+# De documento
 import re
 import random
 import json
-from datetime import datetime
 import time
 
-# Cargar el archivo patterns.json
-"""
-Ejemplo de archivo patrones-respuestas.json:
-{
-    "saludos": [
-        {
-            "pattern": "Hola",
-            "response": [
-                "¡Hola! ¿En qué puedo ayudarte hoy?",
-                "¡Hola! ¿Cómo estás?"
-            ]
-        }
-    ]
-}
-"""
+# De variables
+from datetime import datetime
+
 with open("patrones-respuestas.json", encoding="utf-8") as file:
     patterns = json.load(file)
 
@@ -57,28 +45,19 @@ def process_input(user_input, patterns_dict):
             if pattern.search(user_input):
                 response = random.choice(responses)
                 response = formateo_variables(response)
+                # # Definir el ancho máximo de línea
+                # line_width = 80
+                # # Envolver el texto en líneas de ancho máximo
+                # response = textwrap.fill(response, width=line_width)
                 for char in response:
                     print(char, end='', flush=True)
-                    time.sleep(0.05)
+                    time.sleep(0.02)
                 print('\n')
                 return response
 
 
 def formateo_variables(respuesta):
-    """
-    Ejemplo de respesta a formatear:
-    {
-        "hora": [
-            {
-                "pattern": "Que hora es?",
-                "response": [
-                    "Son las [hora].",
-                    "Ahora son las [hora]."
-                ]
-            }
-        ]
-    }
-    """
+    
     hora_actual = datetime.now().time()
     hora_formateada = hora_actual.strftime("%H:%M:%S")
     respuesta_formateada = respuesta.replace("[hora]", hora_formateada)
@@ -92,6 +71,6 @@ while True:
     if not input_text:
         continue
     else:
-        if input_text.lower() in ["adios", "chao", "hasta luego", "salir"]:
+        if input_text.lower() in ["adios", "salir"]:
             exit()
         output_text = process_input(input_text, patterns_dict)
