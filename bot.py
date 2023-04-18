@@ -1,12 +1,12 @@
-# De documento
+import tkinter as tk
+from tkinter import scrolledtext
 import re
 import random
 import json
 import time
-
-# De variables
 from datetime import datetime
 
+# Cargar los patrones y respuestas desde el archivo JSON
 with open("patrones-respuestas.json", encoding="utf-8") as file:
     patterns = json.load(file)
 
@@ -17,60 +17,55 @@ for intent, data in patterns.items():
         (re.compile(item["pattern"], re.IGNORECASE), item["response"]) for item in data]
 
 # Definir la función para procesar la entrada del usuario
-"""
-    Toma una entrada del usuario y un diccionario de patrones y respuestas, y devuelve una respuesta
-    aleatoria del diccionario si la entrada del usuario coincide con alguno de los patrones.
-    
-    :param user_input: La entrada del usuario, que suponemos que se ha procesado previamente antes de
-    pasar al bot
-    :param patterns_dict: un diccionario de diccionarios. Las claves son los nombres de las intenciones
-    y los valores son diccionarios que contienen los patrones y las respuestas para esa intención
-    :return: Una respuesta aleatoria de la lista de respuestas.
-    Ejemplo de respuestas por defecto:
-    {
-        "otro": [
-            {
-                "pattern": "",
-                "response": [
-                    "Lo siento, no entiendo la pregunta. ¿Podrías preguntar de otra manera?",
-                    "No estoy seguro de entender lo que preguntas. ¿Podrías reformular tu pregunta?"
-                ]
-            }
-        ]
-    }
-"""
-def process_input(user_input, patterns_dict):
+
+
+def process_input(user_input, patterns_dict, chatlog):
     for intent, patterns in patterns_dict.items():
         for pattern, responses in patterns:
             if pattern.search(user_input):
                 response = random.choice(responses)
                 response = formateo_variables(response)
-                # # Definir el ancho máximo de línea
-                # line_width = 80
-                # # Envolver el texto en líneas de ancho máximo
-                # response = textwrap.fill(response, width=line_width)
-                for char in response:
-                    print(char, end='', flush=True)
-                    time.sleep(0.02)
-                print('\n')
+                chatlog.config(state=tk.NORMAL, wrap="word")
+                chatlog.insert(tk.END, "Bot: " + response + "\n\n")
+                chatlog.config(state=tk.DISABLED)
+                chatlog.see(tk.END)
                 return response
 
 
 def formateo_variables(respuesta):
-    
     hora_actual = datetime.now().time()
     hora_formateada = hora_actual.strftime("%H:%M:%S")
     respuesta_formateada = respuesta.replace("[hora]", hora_formateada)
     return respuesta_formateada
 
+# Definir la función para enviar la entrada del usuario
 
-# Bucle de chat
-while True:
-    # Obtener la entrada del usuario
-    input_text = input("> ")
-    if not input_text:
-        continue
-    else:
-        if input_text.lower() in ["adios", "salir"]:
-            exit()
-        output_text = process_input(input_text, patterns_dict)
+
+def send_input(event=None):
+    user_input = input_box.get()
+    chatlog.config(state=tk.NORMAL, wrap="word")
+    chatlog.insert(tk.END, "Usuario: " + user_input + "\n\n")
+    chatlog.config(state=tk.DISABLED)
+    chatlog.see(tk.END)
+    input_box.delete(0, tk.END)
+    process_input(user_input, patterns_dict, chatlog)
+
+# Crear la ventana principal
+root = tk.Tk()
+root.title("Chatbot")
+
+# Crear un widget de diálogo enriquecido
+chatlog = scrolledtext.ScrolledText(root, width=50, height=15)
+chatlog.configure(state='disabled')
+
+# Crear un cuadro de entrada de texto
+input_box = tk.Entry(root, width=90, highlightthickness=20,
+                     highlightcolor="#252526")
+input_box.bind("<Return>", send_input)
+
+# Colocar los widgets en la ventana principal
+chatlog.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
+input_box.pack(side=tk.BOTTOM, fill=tk.X)
+
+# Iniciar el bucle principal de la ventana
+root.mainloop()

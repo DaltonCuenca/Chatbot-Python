@@ -101,7 +101,7 @@
             ]
         }
     ],
-    "programacion": [
+    "programacion": [ 
         {
             "pattern":"Que es (la programacion|programacion)|programacion\\??",
             "response":[
