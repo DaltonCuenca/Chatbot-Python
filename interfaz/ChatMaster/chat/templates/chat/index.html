@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/chat.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -21,7 +22,7 @@
         </div>
     </nav>
 
-    <div class="ventana">
+    <div class="ventana" id="scrollable-content">
         <!-- <h4 id="scrollspyHeading1">First heading</h4>
         <p>...</p> -->
         {% if not obj %}
@@ -31,7 +32,7 @@
         {% else %}
 
         {% for item in obj %}
-        <div class="card usuario">
+        <div class="card usuario" id="card-usuario">
             <div class="card-header">
                 Usuario
             </div>
@@ -39,7 +40,7 @@
                 <p class="card-text">{{item.pregunta}}</p>
             </div>
         </div>
-        <div class="card bot">
+        <div class="card bot" id="card-bot">
             <div class="card-header">
                 Bot
             </div>
@@ -54,36 +55,11 @@
         {% csrf_token %}
         <div class="botones">
             <div class="input-group">
-                <input type="text" name="user_input" placeholder="Escribe tu mensaje aquí">
+                <input type="text" class="form-control" name="user_input" placeholder="Escribe tu mensaje aquí">
                 <button class="input-group-text" type="submit" id="send-button">Enviar</button>
             </div>
         </div>
-        <a href="{% url 'borrar_conversacion' %}">Borrar conversación</a>
-
     </form>
-    <!-- <script>
-        // Maneja el envío del formulario
-        $('#chat-form').on('submit', function (event) {
-            event.preventDefault();
-            var user_input = $('#user-input').val().trim();
-
-            // Envía la entrada del usuario a la vista de chat
-            $.ajax({
-                url: '{% url "chat" %}',
-                type: 'POST',
-                data: { user_input: user_input },
-                success: function (response) {
-                    // Agrega la respuesta del bot al chat
-                    $('#chat-messages').append('<p>' + response.response + '</p>');
-                    // Limpia el campo de entrada del usuario
-                    $('#user-input').val('');
-                },
-                error: function () {
-                    alert('Ocurrió un error al enviar la solicitud.');
-                }
-            });
-        });
-    </script> -->
 </body>
 
 </html>

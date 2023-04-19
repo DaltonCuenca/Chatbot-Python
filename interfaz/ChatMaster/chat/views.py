@@ -53,6 +53,9 @@ def chatbot(request):
 
     # Guarda el historial de conversación en la sesión
     request.session['conversation'] = conversation
+    
+    if len(request.session['conversation']) > 0:
+        borrar_conversacion(request)
 
     context = {'obj': conversation}
     return render(request, 'chat/index.html', context)
@@ -60,4 +63,4 @@ def chatbot(request):
 def borrar_conversacion(request):
     # Elimina el historial de conversación de la sesión
     del request.session['conversation']
-    return redirect('chat/index.html')
+    # return redirect('chat/index.html')
