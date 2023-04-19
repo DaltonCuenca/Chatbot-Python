@@ -1,18 +1,49 @@
+nav {
+    border-bottom: 1px solid #000;
+    background-color: #5b2276;
+}
+
+body {
+    background-color: slategray !important;
+}
+
 .ventana {
     width: 80%;
     height: 70vh;
-    background-color: #570e74;
     overflow-y: scroll;
+    background: url('https://doodleipsum.com/700/outline?i=513477ea4837ed87ff2fc8e64ae66968') no-repeat center #933d8c8e;
     margin: 10px auto 0 auto;
+    border-radius: 10px 10px 0 0;
 }
-.ventana > .alert{
+
+.ventana>.alert {
     margin: 10px;
 }
-.botones{
+
+.botones {
     width: 80%;
     margin: auto;
 }
-.botones > .input-group{
+
+.botones>.input-group {
     height: 60px;
-    border: 2px solid blueviolet !important;
+}
+
+.input-group input {
+    border-radius: 0 0 0 5px !important;
+}
+
+.botones button {
+    background-color: #5b2276;
+    color: #fff;
+    border-radius: 0 0 5px 0 !important;
+}
+
+.card {
+    width: 50%;
+    margin: 5px;
+}
+
+.usuario {
+    float: right;
 }

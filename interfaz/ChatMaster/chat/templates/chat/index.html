@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar">
         <div class="container">
             <a class="navbar-brand text-light" href="#">
                 <img src="{% static 'img/logo.png' %}" alt="Algorithmics" width="30" height="30">
@@ -29,24 +29,61 @@
             No hay una conversacion iniciada, Hablemos!
         </div>
         {% else %}
-        <div class="card">
+
+        {% for item in obj %}
+        <div class="card usuario">
             <div class="card-header">
-                Featured
+                Usuario
             </div>
             <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">{{item.pregunta}}</p>
             </div>
         </div>
+        <div class="card bot">
+            <div class="card-header">
+                Bot
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{item.respuesta.response}}</p>
+            </div>
+        </div>
+        {% endfor %}
         {% endif %}
     </div>
-    <div class="botones">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Pregunta algo!">
-            <span class="input-group-text" id="basic-addon2">Enviar</span>
+    <form id="chat-form" action="{% url 'chat' %}" method="post">
+        {% csrf_token %}
+        <div class="botones">
+            <div class="input-group">
+                <input type="text" name="user_input" placeholder="Escribe tu mensaje aquí">
+                <button class="input-group-text" type="submit" id="send-button">Enviar</button>
+            </div>
         </div>
-    </div>
+        <a href="{% url 'borrar_conversacion' %}">Borrar conversación</a>
+
+    </form>
+    <!-- <script>
+        // Maneja el envío del formulario
+        $('#chat-form').on('submit', function (event) {
+            event.preventDefault();
+            var user_input = $('#user-input').val().trim();
+
+            // Envía la entrada del usuario a la vista de chat
+            $.ajax({
+                url: '{% url "chat" %}',
+                type: 'POST',
+                data: { user_input: user_input },
+                success: function (response) {
+                    // Agrega la respuesta del bot al chat
+                    $('#chat-messages').append('<p>' + response.response + '</p>');
+                    // Limpia el campo de entrada del usuario
+                    $('#user-input').val('');
+                },
+                error: function () {
+                    alert('Ocurrió un error al enviar la solicitud.');
+                }
+            });
+        });
+    </script> -->
 </body>
 
 </html>

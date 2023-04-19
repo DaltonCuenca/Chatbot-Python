@@ -1,0 +1,137 @@
+{
+    "saludos": [
+        {
+            "pattern": "Hola",
+            "response": [
+                "¡Hola! ¿Cómo estás?",
+                "¡Buenos días! ¿Qué tal estás?",
+                "¡Buenas tardes! ¿Qué puedo hacer por ti?"
+            ]
+        },
+        {
+            "pattern": "(Buenos dias|Buen dia)",
+            "response": [
+                "¡Buenos días! ¿Cómo estás?",
+                "¡Hola! ¿Qué planes tienes para hoy?",
+                "¡Feliz mañana! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "pattern": "Buenas tardes",
+            "response": [
+                "¡Buenas tardes! ¿Cómo estás?",
+                "¡Hola! ¿Qué tal tu día?",
+                "¡Buenas tardes! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "pattern": "Buenas noches",
+            "response": [
+                "¡Buenas noches! ¿Cómo estás?",
+                "¡Hola! ¿Estás listo para descansar?",
+                "¡Feliz noche! ¿Necesitas ayuda con algo?"
+            ]
+        },
+        {
+            "pattern": "Como (estas|te encuentras|tal estas)\\??",
+            "response": [
+                "Estoy bien, gracias. ¿Y tú?",
+                "¡Estoy genial!"
+            ]
+        },
+        {
+            "pattern": "Como ha sido tu dia?",
+            "response": [
+                "Ha sido un día ocupado, pero productivo. ¿Y el tuyo?",
+                "¡Ha sido un día genial!"
+            ]
+        }
+    ],
+    "conversacion": [
+        {
+            "pattern": "(Cual es tu nombre|Como te llamas|Tu nombre)\\??",
+            "response": [
+                "Mi nombre es Chat Master. Soy un bot diseñado por Algorithmics para ayudar a las personas a obtener respuestas a sus preguntas y proporcionar asistencia en diversos temas. ¿En qué puedo ayudarte hoy?",
+
+                "Mi nombre es Chat Master. Soy un bot desarrollado por Algorithmics, diseñado para conversar y responder preguntas. ¿En qué puedo ayudarte hoy?",
+
+                "Mi nombre es Chat Master. ¿En qué puedo ayudarte hoy?"
+            ]
+        },
+        {
+            "pattern": "Que haces?",
+            "response": [
+                "Soy un programa de ordenador, por lo que no puedo hacer cosas en el sentido en que lo hacen las personas. Pero estoy aquí para ayudarte en lo que necesites, responder tus preguntas o conversar contigo si lo deseas. ¿Hay algo en particular en lo que pueda ayudarte hoy?"
+            ]
+        },
+        {
+            "pattern": "Puedes tener conversaciones?",
+            "response": [
+                "¡Claro! Estoy programado para tener conversaciones con las personas. ¿De qué te gustaría hablar?"
+            ]
+        }
+    ],
+    "hora": [
+        {
+            "pattern": "Que hora es?",
+            "response": [
+                "Son las [hora].",
+                "Ahora son las [hora]."
+            ]
+        },
+        {
+            "pattern": "A que hora es el evento?",
+            "response": [
+                "El evento es a las [hora].",
+                "Comienza a las [hora]."
+            ]
+        }
+    ],
+    "algorithmics": [
+        {
+            "pattern": "Que es Algorithmic?",
+            "response": [
+                "Algorithmic School es una empresa que se dedica a la educación en tecnología y programación para niños y jóvenes."
+            ]
+        },
+        {
+            "pattern": "Cuales son los cursos que ofrece Algorithmic?",
+            "response": [
+                "Algorithmic ofrece los siguientes cursos: \nCaballero del codigo (5-7 años)\nAcademia Marciana (8-10 años)\nDiseño de Videojuegos (5-7 años)\nPython (14-17 años)"
+            ]
+        }
+    ],
+    "programacion": [ 
+        {
+            "pattern":"Que es (la programacion|programacion)|programacion\\??",
+            "response":[
+                "Básicamente programar es darle instrucciones de que hacer a un computador, por medio de un lenguaje de programación que son una serie de reglas de escritura, para decirle como hacer las cosas a ese computador.",
+
+                "La programación es el proceso de diseñar y escribir código de computadora para crear software y aplicaciones que realizan tareas específicas en una computadora u otro dispositivo electrónico.",
+
+                "La programación es el proceso de crear instrucciones que una computadora puede entender y seguir para realizar una tarea específica. Esto se logra mediante el uso de lenguajes de programación, que permiten a los programadores escribir y diseñar software y aplicaciones para una amplia variedad de dispositivos electrónicos, como teléfonos inteligentes, computadoras, robots y otros sistemas informáticos."
+            ]
+        },
+        {
+            "pattern": "(Que es una variable|variable|Que es variable)\\??",
+            "response": [
+                "En programación, una variable es un elemento de datos que se utiliza para almacenar valores y que puede cambiar durante la ejecución de un programa. Cada variable se define mediante un nombre único y tiene un tipo de dato asociado que define qué tipo de valor puede almacenar."
+            ]
+        },
+        {
+            "pattern": "(Que es una funcion|funcion)\\?",
+            "response": [
+                "En Python, una función es un bloque de código que se puede ejecutar varias veces, y que normalmente recibe una entrada (argumentos) y produce una salida (retorno). Las funciones en Python se definen usando la palabra clave \"def\", seguida del nombre de la función y una lista de parámetros entre paréntesis.\nAquí hay un ejemplo de una función simple que toma dos argumentos y devuelve su suma:\ndef sumar(a, b):\n\ta+b\nEn este caso, la función se llama \"sumar\", toma dos argumentos \"a\" y \"b\", y devuelve su suma. Para llamar a la función y obtener el resultado, simplemente se puede pasar los valores de los argumentos:\nresultado = sumar(3, 5)\nprint(resultado) # Salida: 8\nEn este caso, la función se llama con los argumentos 3 y 5, y devuelve el resultado de la suma (8), que se asigna a la variable \"resultado\". Luego se imprime el resultado en la consola.\nLas funciones son una parte importante de la programación en Python, ya que permiten reutilizar código y simplificar la estructura del programa."
+            ]
+        }
+    ],
+    "otro": [
+        {
+            "pattern": "",
+            "response": [
+                "Lo siento, no entiendo la pregunta. ¿Podrías preguntar de otra manera?",
+                "No estoy seguro de entender lo que preguntas. ¿Podrías reformular tu pregunta?"
+            ]
+        }
+    ]
+}
