@@ -1,0 +1,18 @@
+.ventana {
+    width: 80%;
+    height: 70vh;
+    background-color: #570e74;
+    overflow-y: scroll;
+    margin: 10px auto 0 auto;
+}
+.ventana > .alert{
+    margin: 10px;
+}
+.botones{
+    width: 80%;
+    margin: auto;
+}
+.botones > .input-group{
+    height: 60px;
+    border: 2px solid blueviolet !important;
+}
