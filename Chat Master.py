@@ -46,7 +46,6 @@ def process_input(user_input, patterns_dict):
 
 
 def formateo_variables(respuesta):
-    
     hora_actual = datetime.now().time()
     hora_formateada = hora_actual.strftime("%H:%M:%S")
     respuesta_formateada = respuesta.replace("[hora]", hora_formateada)
