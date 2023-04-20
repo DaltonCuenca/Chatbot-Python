@@ -20,22 +20,29 @@ with open("patrones-respuestas.json", encoding="utf-8") as file:
 
 # Crear un diccionario de patrones y respuestas
 patterns_dict = {}
+# Llenamos el diccionario con la informacion de la variable patterns
 for indice, data in patterns.items():
     patterns_dict[indice] = [
         (re.compile(item["pattern"], re.IGNORECASE), item["response"]) for item in data]
 
 # Definir la función para procesar la entrada del usuario
 def process_input(user_input, patterns_dict):
+    # separamos los patrones en items
     for indice, patterns in patterns_dict.items():
+        # separamos los items en patron y respuesta
         for pattern, responses in patterns:
+            # buscamos si un patron es similar a lo que el usuario
+            # escribio
             if pattern.search(user_input):
+                # Damos una respuesta aleatoria a la pregunta
                 response = random.choice(responses)
+                #Formateamos variables si se requiere
                 response = formateo_variables(response)
+                #cada caracter de la respuesta se presenta cada 0.02 segundos
                 for char in response:
                     print(char, end='', flush=True)
                     time.sleep(0.02)
                 print('\n')
-                return response
 
 
 def formateo_variables(respuesta):
@@ -48,10 +55,17 @@ def formateo_variables(respuesta):
 
 # Bucle de chat
 while True:
+    # Pedimos informacion al usuario
     input_text = input("> ")
+    #si la informacion esta vacia
     if not input_text:
+        #repetimos el ciclo
         continue
+    # de lo contrario
     else:
+        # Si lo que el usuario escribio es adios o salir
         if input_text.lower() in ["adios", "salir"]:
+            #cierra el programa
             exit()
-        output_text = process_input(input_text, patterns_dict)
+        #de lo contrario llama a la funcion process input
+        process_input(input_text, patterns_dict)
