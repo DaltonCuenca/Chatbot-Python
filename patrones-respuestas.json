@@ -1,4 +1,156 @@
 {
+    "ChatGPT": [
+        {
+            "pattern": "Dime que IA usar para la creación de texto",
+            "response": [
+                "Si estás buscando interactuar y generar texto de manera conversacional la mejor opción es ChatGPT",
+                "ChatGPT se puede usar para brindar respuestas rápidas y precisas a preguntas frecuentes y problemas comunes en los sitios web"
+            ]
+        },
+        {
+            "pattern": "En qué me puede ayudar chatgpt",
+            "response": [
+                "ChatGPT puede generar contenido para blogs, artículos, descripciones de productos y otros tipos de contenido escrito.",
+                "Puedes interactuar con ChatGPT como si estuvieras realizando una búsqueda en lenguaje natural. Le haces preguntas y obtienes respuestas que se asemejan a los resultados de búsqueda.",
+                "Si estás buscando inspiración para proyectos creativos, nombres de productos o ideas en general, puedes utilizar ChatGPT para generar sugerencias."
+            ]
+        },
+        {
+            "pattern": "Dame un ejemplo de lo que hace chatgpt",
+            "response": [
+                "¡Por supuesto! Aquí tienes un ejemplo de una conversación con ChatGPT:/nUsuario: ¿Cuáles son las consecuencias del calentamiento global? \nChatGPT: Excelente pregunta. El calentamiento global, que es causado en parte por el aumento del efecto invernadero, tiene una serie de consecuencias importantes. Estas incluyen el derretimiento de los glaciares y casquetes polares, lo que contribuye al aumento del nivel del mar. También puede provocar eventos climáticos extremos más frecuentes y graves, como sequías prolongadas, inundaciones intensas, huracanes más intensos y patrones climáticos impredecibles."
+            ]
+        },
+        {
+            "pattern": "Ventajas de usar chatgpt",
+            "response": [
+                "Respuestas Consistentes: ChatGPT genera respuestas coherentes y consistentes, lo que ayuda a garantizar que la información proporcionada sea uniforme y precisa.",
+                "Acceso a Información: Puede proporcionar información detallada sobre una amplia variedad de temas, lo que lo convierte en una herramienta útil para aprender y obtener respuestas a preguntas."
+            ]
+        },
+        {
+            "pattern": "Chatgpt puede ayudarme con temas de investigación",
+            "response": [
+                "Si, puede proporcionar información general sobre una amplia gama de temas y ayudarte a generar ideas, conceptos y argumentos. ",
+                "Puede ayudarte a generar ideas iniciales para tu investigación, brindándote diferentes perspectivas y enfoques."
+            ]
+        }
+
+    ],
+    "Craiyon": [
+        {
+            "pattern": "Dime que IA usar para la creación de imágenes", 
+            "response": [
+                "Craiyon es una web en la que la Inteligencia Artificial nos permite pasar momentos entretenidos creando imágenes de la nada. "
+            ]
+        },
+        {
+            "pattern": "En qué me puede ayudar craiyon",
+            "response": [
+                "Los usuarios pueden ingresar texto y el modelo de IA genera una imagen única basada en su conocimiento actual y en su capacidad para combinar conceptos de manera creativa.",
+                "Craiyon funciona mediante la creación de cursos en línea interactivos y basados en problemas que los usuarios pueden acceder a través de la aplicación móvil y la plataforma web.?"
+            ]
+        },
+        {
+            "pattern": "¿Cuáles son los beneficios de usar Craiyon?",
+            "response": [
+                "Ahorro de tiempo y dinero: Craiyon.ai permite crear imágenes de alta calidad en poco tiempo y sin necesidad de tener habilidades de diseño gráfico. Esto puede ahorrar tiempo y dinero en la creación de contenido visual para redes sociales, blogs, presentaciones y más.",
+
+                "Flexibilidad y personalización: Con Craiyon.ai, puedes personalizar fácilmente tus imágenes según tus necesidades y preferencias. Puedes elegir entre diferentes estilos y paletas de color, ajustar la composición y el tamaño de la imagen, y agregar texto y otros elementos gráficos."
+
+            ]
+        },
+        {
+            "pattern": "Qué tipo de imágenes puedo crear con Craiyon",
+            "response": [
+                "Con Craiyon, puedes generar una variedad de imágenes a partir de texto, como ilustraciones, arte abstracto, paisajes, retratos, obras de arte, imágenes de animales y mucho más."
+            ]
+        },
+        {
+            "pattern": "Se pueden descargar las imágenes generadas por Craiyon",
+            "response": [
+                "Sí, se pueden descargar las imágenes generadas por Craiyon generador de imágenes a partir de texto. Después de crear la imagen, puedes presionar el botón «Descargar» para guardarla en tu computadora o dispositivo. Alternativamente, también puedes copiar la URL de la imagen y compartirla con otros."
+            ]
+        }
+
+    ],
+    "Wepik": [
+        {
+            "pattern": "Dime que IA usar para la creación de presentaciones",
+            "response": [
+                "Wepik es una plataforma online diseñada para ayudar a cualquiera a crear impresionantes elementos visuales en cuestión de minutos."
+                
+            ]
+        },
+        {
+            "pattern": "Qué ventajas tiene wepik",
+            "response": [
+                "Hay miles de plantillas y formatos personalizables.",
+                "Tus diseños se guardan, por lo que podrás seguir editándolos más tarde.",
+                "Los diseños se pueden compartir directamente desde la aplicación. "
+            ]
+        },
+        {
+            "pattern": "Se puede compartir el contenido creado desde wepik",
+            "response": [
+                " Cuando tu diseño esté listo, haz clic en el botón «Descargar» y obtenlo en el formato que prefieras. Pero espera, que aún hay más - ¡también puedes publicar contenido en redes sociales directamente desde la App!"
+            ]
+        },
+        {
+            "pattern": "Cómo se usa wepik",
+            "response": [
+                "En la página de inicio encontrarás el contenido destacado y un montón de plantillas prediseñadas. Navega por ellas y elige la que más te guste, ¡para editarla en un abrir y cerrar de ojos!",
+                "Crear los diseños más alucinantes sin necesidad de un ordenador es posible gracias a la app para móvil de Wepik. En ella encontrarás infinidad de plantillas creativas y editables prediseñadas, ¿y sabes qué es lo mejor? ¡Es 100% gratis!"
+            ]
+        },
+        {
+            "pattern": "Cómo guardo los diseños de la app wepik en mi ordenador",
+            "response": [
+                "¡Crea tu cuenta en Wepik y mantén tus diseños y proyectos a salvo tanto en la aplicación móvil como en la versión de escritorio! Solo recuerda crear tu cuenta, es completamente gratuita, y permanece conectado mientras editas cualquiera de tus proyectos. Los cambios se guardarán automáticamente, por lo que puedes editar cualquier plantilla en la app móvil y descargarla más tarde en tu PC."
+            ]
+        }
+
+    ],
+    "Paraphraser": [
+        {
+            "pattern": "Dime que IA usar para parafrasear un texto",
+            "response": [
+                "IA Paraphraser se refiere a una tecnología basada en inteligencia artificial que se utiliza para reescribir o parafrasear contenido de manera automática.",
+                "La herramienta de Paraphraser basadas en IA lo ayudan a crear contenido simple y de alta calidad. Se podría incluir una búsqueda de legibilidad del texto en un par de estos materiales, que puede usar para determinar si el texto es comprensible."
+            ]
+        },
+        {
+            "pattern": "Me puede ayudar en la realización de proyectos de investigación",
+            "response": [
+                "Si, los redactores y creadores de contenido pueden utilizar esta tecnología para crear variaciones únicas de un artículo o una pieza escrita, lo que puede ser útil para evitar contenido duplicado o mejorar la legibilidad.",
+                "La parafraseadora IA puede ayudar a estudiantes, investigadores y escritores a reformular el contenido de manera que evite el plagio accidental al presentar ideas en sus propias palabras.",
+                "La IA Paraphraser también puede utilizarse para simplificar un texto complejo, haciéndolo más accesible para un público más amplio."
+            ]
+        },
+        {
+            "pattern": "Existe alguna desventaja al usar paraphraser",
+            "response": [
+                " Es importante tener en cuenta que, aunque la parafraseadora IA puede ser útil para ciertas aplicaciones, no siempre garantiza la calidad o la coherencia del contenido resultante. "
+            ]
+        },
+        
+
+        {
+            "pattern": "¿Usar una herramienta de paráfrasis cuenta como plagio?",
+            "response": [
+                "No, usar una herramienta de parafrasear no es ilegal si se usa correctamente. En la redacción académica, si utiliza una herramienta de paráfrasis para crear contenido, debe citarse correctamente. Usar contenido parafraseado como trabajo original podría considerarse mala conducta académica."
+            ]
+        },
+        {
+            "pattern": "¿Paraphraser genera información legible?",
+            "response": [
+                "Si, Paraphraser.io tiene el arte de reformular el texto a nivel humano. El resultado final será legible, sensato y libre de plagio.",
+                "Paraphraser no arruina la calidad del contenido después de parafrasear. Por lo tanto, nuestra herramienta de paráfrasis ayuda a mejorar sus habilidades de escritura y le brinda una forma diferente de expresar sus propias palabras."
+            ]
+        }
+
+    ],
+
     "saludos": [
         {
             "pattern": "Hola",
@@ -59,12 +211,6 @@
             ]
         },
         {
-            "pattern": "Que haces?",
-            "response": [
-                "Soy un programa de ordenador, por lo que no puedo hacer cosas en el sentido en que lo hacen las personas. Pero estoy aquí para ayudarte en lo que necesites, responder tus preguntas o conversar contigo si lo deseas. ¿Hay algo en particular en lo que pueda ayudarte hoy?"
-            ]
-        },
-        {
             "pattern": "Puedes tener conversaciones?",
             "response": [
                 "¡Claro! Estoy programado para tener conversaciones con las personas. ¿De qué te gustaría hablar?"
@@ -84,20 +230,6 @@
             "response": [
                 "El evento es a las [hora].",
                 "Comienza a las [hora]."
-            ]
-        }
-    ],
-    "algorithmics": [
-        {
-            "pattern": "Que es Algorithmic?",
-            "response": [
-                "Algorithmic School es una empresa que se dedica a la educación en tecnología y programación para niños y jóvenes."
-            ]
-        },
-        {
-            "pattern": "Cuales son los cursos que ofrece Algorithmic?",
-            "response": [
-                "Algorithmic ofrece los siguientes cursos: \nCaballero del codigo (5-7 años)\nAcademia Marciana (8-10 años)\nDiseño de Videojuegos (5-7 años)\nPython (14-17 años)"
             ]
         }
     ],
