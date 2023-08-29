@@ -35,11 +35,10 @@
                 "Puede ayudarte a generar ideas iniciales para tu investigación, brindándote diferentes perspectivas y enfoques."
             ]
         }
-
     ],
     "Craiyon": [
         {
-            "pattern": "Dime que IA usar para la creación de imágenes", 
+            "pattern": "Dime que IA usar para la creación de imágenes",
             "response": [
                 "Craiyon es una web en la que la Inteligencia Artificial nos permite pasar momentos entretenidos creando imágenes de la nada. "
             ]
@@ -55,9 +54,7 @@
             "pattern": "¿Cuáles son los beneficios de usar Craiyon?",
             "response": [
                 "Ahorro de tiempo y dinero: Craiyon.ai permite crear imágenes de alta calidad en poco tiempo y sin necesidad de tener habilidades de diseño gráfico. Esto puede ahorrar tiempo y dinero en la creación de contenido visual para redes sociales, blogs, presentaciones y más.",
-
                 "Flexibilidad y personalización: Con Craiyon.ai, puedes personalizar fácilmente tus imágenes según tus necesidades y preferencias. Puedes elegir entre diferentes estilos y paletas de color, ajustar la composición y el tamaño de la imagen, y agregar texto y otros elementos gráficos."
-
             ]
         },
         {
@@ -72,14 +69,12 @@
                 "Sí, se pueden descargar las imágenes generadas por Craiyon generador de imágenes a partir de texto. Después de crear la imagen, puedes presionar el botón «Descargar» para guardarla en tu computadora o dispositivo. Alternativamente, también puedes copiar la URL de la imagen y compartirla con otros."
             ]
         }
-
     ],
     "Wepik": [
         {
             "pattern": "Dime que IA usar para la creación de presentaciones",
             "response": [
                 "Wepik es una plataforma online diseñada para ayudar a cualquiera a crear impresionantes elementos visuales en cuestión de minutos."
-                
             ]
         },
         {
@@ -109,7 +104,6 @@
                 "¡Crea tu cuenta en Wepik y mantén tus diseños y proyectos a salvo tanto en la aplicación móvil como en la versión de escritorio! Solo recuerda crear tu cuenta, es completamente gratuita, y permanece conectado mientras editas cualquiera de tus proyectos. Los cambios se guardarán automáticamente, por lo que puedes editar cualquier plantilla en la app móvil y descargarla más tarde en tu PC."
             ]
         }
-
     ],
     "Paraphraser": [
         {
@@ -133,8 +127,6 @@
                 " Es importante tener en cuenta que, aunque la parafraseadora IA puede ser útil para ciertas aplicaciones, no siempre garantiza la calidad o la coherencia del contenido resultante. "
             ]
         },
-        
-
         {
             "pattern": "¿Usar una herramienta de paráfrasis cuenta como plagio?",
             "response": [
@@ -148,9 +140,7 @@
                 "Paraphraser no arruina la calidad del contenido después de parafrasear. Por lo tanto, nuestra herramienta de paráfrasis ayuda a mejorar sus habilidades de escritura y le brinda una forma diferente de expresar sus propias palabras."
             ]
         }
-
     ],
-
     "saludos": [
         {
             "pattern": "Hola",
@@ -204,10 +194,14 @@
             "pattern": "(Cual es tu nombre|Como te llamas|Tu nombre)\\??",
             "response": [
                 "Mi nombre es Chat Master. Soy un bot diseñado para ayudar a las personas a obtener respuestas a sus preguntas y proporcionar asistencia en diversos temas. ¿En qué puedo ayudarte hoy?",
-
                 "Mi nombre es Chat Master. Soy un bot diseñado para conversar y responder preguntas. ¿En qué puedo ayudarte hoy?",
-
                 "Mi nombre es Chat Master. ¿En qué puedo ayudarte hoy?"
+            ]
+        },
+        {
+            "pattern": "Que haces?",
+            "response": [
+                "Soy un programa de ordenador, por lo que no puedo hacer cosas en el sentido en que lo hacen las personas. Pero estoy aquí para ayudarte en lo que necesites, responder tus preguntas o conversar contigo si lo deseas. ¿Hay algo en particular en lo que pueda ayudarte hoy?"
             ]
         },
         {
@@ -233,14 +227,12 @@
             ]
         }
     ],
-    "programacion": [ 
+    "programacion": [
         {
-            "pattern":"Que es (la programacion|programacion)|programacion\\??",
-            "response":[
+            "pattern": "Que es (la programacion|programacion)|programacion\\??",
+            "response": [
                 "Básicamente programar es darle instrucciones de que hacer a un computador, por medio de un lenguaje de programación que son una serie de reglas de escritura, para decirle como hacer las cosas a ese computador.",
-
                 "La programación es el proceso de diseñar y escribir código de computadora para crear software y aplicaciones que realizan tareas específicas en una computadora u otro dispositivo electrónico.",
-
                 "La programación es el proceso de crear instrucciones que una computadora puede entender y seguir para realizar una tarea específica. Esto se logra mediante el uso de lenguajes de programación, que permiten a los programadores escribir y diseñar software y aplicaciones para una amplia variedad de dispositivos electrónicos, como teléfonos inteligentes, computadoras, robots y otros sistemas informáticos."
             ]
         },
